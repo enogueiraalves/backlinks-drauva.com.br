@@ -4,8 +4,10 @@ export default {
     const path = url.pathname
 
     const redirects = {
-      "/": "https://drauva.com.br"
-    }
+        "/": "https://bargenial.com.br/suco-de-uva-e-saude-beneficios-comprovados/",
+        "/wp-content/uploads/2019/10/Dani-et-al.-2017.pdf": "https://bargenial.com.br/suco-de-uva-e-saude-beneficios-comprovados/",
+        "/2020/04/26/vinho-e-longevidade/": "https://bargenial.com.br/suco-de-uva-e-saude-beneficios-comprovados/",
+      }
 
     if (redirects[path]) {
       return Response.redirect(redirects[path], 301)
